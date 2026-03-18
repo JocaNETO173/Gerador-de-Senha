@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+    <h2>Gerador de Senhas</h2>
+    <div class="options">
+        <h3>Escolha os caractéres que você quer que estejam presentes em sua senha.</h3>
+    <input type="checkbox" name="lower" id="lower">
+    <label for="lower">Letras Minúsculas</label> <br>
+
+    <input type="checkbox" name="upper" id="upper">
+    <label for="upper">Letras Maiuscúlas</label> <br>
+
+    <input type="checkbox" name="special" id="special">
+    <label for="special">Caractéres Especiais</label> <br>
+
+    <input type="checkbox" name="numbers" id="numbers">
+    <label for="numbers">Números</label> <br>
+    </div>
+    <h3>Digite um número máximo de caractéres da sua senha.</h3>
+    <input type="text" id="caracteres" placeholder="Digite um número de caractéres">
+    <button onclick="gerar()">Gerar</button>
+    <p id="texto"></p>
+    <script src="./gerador2.js"></script>
+</body>
+</html>
